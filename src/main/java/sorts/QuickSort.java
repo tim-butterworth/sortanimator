@@ -138,9 +138,11 @@ public class QuickSort implements DisplaySort {
     if(boundsSet){
       labels.add(new AnimationLabel("Lb", leftBound, Color.green));
       labels.add(new AnimationLabel("Rb", rightBound, Color.blue));
+      labels.add(new AnimationLabel("", currentBounds.getLeftBound(), Color.orange));
+      labels.add(new AnimationLabel("", currentBounds.getRightBound(), Color.orange));
     }
     if(pivotSet) labels.add(new AnimationLabel("pivot", pivot, Color.red));
-    for(Integer ordered:inorder) labels.add(new AnimationLabel("o", ordered.intValue(), Color.DARK_GRAY));
+    for(Integer ordered:inorder) labels.add(new AnimationLabel("o", ordered.intValue(), Color.black));
     return new SortDisplayFrame(utilities.copyOf(toSort), labels);
   }
 

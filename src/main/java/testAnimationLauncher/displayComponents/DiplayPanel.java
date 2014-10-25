@@ -27,7 +27,7 @@ public class DiplayPanel extends JPanel {
   
   @Override
   public void paint(Graphics g) {
-    g.setColor(Color.black);
+    g.setColor(Color.DARK_GRAY);
 
     int border = 3;
     int w = getWidth()-2*border;
